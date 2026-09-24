@@ -1,0 +1,7 @@
+backend: pope_runner
+model_family: qwen25_vl
+runner_script: ${paths.root_dir}/scripts/pope_qwen25_vl_only_compare.py
+datasets:
+  - pope_adversarial
+dataset_kwargs: {}
+judge: {}

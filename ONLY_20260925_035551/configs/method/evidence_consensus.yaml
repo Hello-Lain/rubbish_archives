@@ -1,0 +1,5 @@
+_target_: methods.evidence_consensus.EvidenceConsensusMethod
+evidence_weight: 0.75
+trust: 1.0
+transport_trust: 1.0
+feature_gain: 1.0

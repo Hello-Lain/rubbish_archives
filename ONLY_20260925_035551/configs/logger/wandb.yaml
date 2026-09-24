@@ -1,0 +1,7 @@
+_target_: utils.experiment_logger.WandbExperimentLogger
+project: only-research
+name: null
+group: null
+tags: ${tags}
+save_dir: ${paths.output_dir}
+mode: online

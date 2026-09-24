@@ -1,0 +1,12 @@
+# @package _global_
+defaults:
+  - override /data: mock
+  - override /model: mock
+  - override /method: standard
+  - override /env: default
+task_name: infer
+tags: ["mock", "smoke"]
+seed: 42
+batch_size: 2
+num_workers: 0
+output_path: ${paths.infer_output_file}

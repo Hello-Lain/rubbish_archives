@@ -1,0 +1,27 @@
+# @package _global_
+defaults:
+  - override /data: pope_adversarial
+  - override /model: qwen25_vl
+  - override /method: vanilla
+  - override /eval_tasks: pope_adversarial
+  - override /env: default
+task_name: pope_qwen25_vl
+tags: ["pope", "adversarial", "qwen25_vl"]
+seed: 42
+method_name: vanilla
+batch_size: 8
+image_batch_size: 16
+num_workers: 4
+prefetch_factor: 4
+max_new_tokens: 8
+decoding: sample
+temperature: 1.0
+top_p: 1.0
+top_k: null
+start: 0
+limit: 3000
+image_feature_cache: true
+env:
+  device: cuda:0
+  # The POPE runner is a single-run CLI; use one process.
+  distributed_backend: gloo

@@ -1,0 +1,4 @@
+_target_: methods.shield_inherent_bias.ShieldInherentBiasMethod
+bias_weight: 0.01
+sample_num: 32
+seed: 42
