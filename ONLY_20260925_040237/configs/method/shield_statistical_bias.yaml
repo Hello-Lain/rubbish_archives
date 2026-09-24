@@ -1,0 +1,4 @@
+_target_: methods.shield_statistical_bias.ShieldStatisticalBiasMethod
+threshold: 0.002
+gamma_gain: 3.0
+gain_per: 0.55

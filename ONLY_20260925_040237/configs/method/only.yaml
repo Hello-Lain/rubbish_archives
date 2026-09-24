@@ -1,0 +1,7 @@
+_target_: methods.only.OnlyPopeMethod
+method_config:
+  enhance_layer: 0
+  alpha_pos: 3.0
+  alpha_neg: 1.0
+  beta: 0.1
+  tvd_gamma: 0.2

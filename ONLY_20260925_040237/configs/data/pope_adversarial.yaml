@@ -1,0 +1,6 @@
+_target_: data.pope.PopeDataset
+path: ${oc.env:POPE_PATH,${paths.hf_hub_root}/pope/coco/coco_pope_adversarial.json}
+images_root: ${oc.env:COCO_IMAGES_ROOT,${paths.hf_hub_root}/coco2014/val2014}
+start: 0
+limit: null
+validate_images: false

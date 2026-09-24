@@ -1,0 +1,928 @@
+{
+  "validation": {
+    "datasets": [
+      "chair",
+      "pope"
+    ],
+    "combination_count_per_dataset": 8,
+    "all_formal_artifacts_passed": true
+  },
+  "result": {
+    "components": {
+      "A": "Adaptive Plausibility",
+      "V": "Vulnerability Defense",
+      "S": "Statistical Bias"
+    },
+    "combination_order": [
+      "",
+      "A",
+      "V",
+      "S",
+      "AV",
+      "AS",
+      "VS",
+      "AVS"
+    ],
+    "utility": {
+      "chair": {
+        "CHAIRs": "negative_raw_value",
+        "CHAIRi": "negative_raw_value",
+        "Recall": "positive_raw_value"
+      },
+      "pope": {
+        "accuracy": "positive_raw_value",
+        "precision": "positive_raw_value",
+        "recall": "positive_raw_value",
+        "f1": "positive_raw_value"
+      }
+    },
+    "matrix": {
+      "chair": {
+        "vanilla": {
+          "CHAIRs": 0.518,
+          "CHAIRi": 0.16349161216946262,
+          "Recall": 0.8080828282828291
+        },
+        "A": {
+          "CHAIRs": 0.496,
+          "CHAIRi": 0.13577235772357724,
+          "Recall": 0.8408663780663788
+        },
+        "V": {
+          "CHAIRs": 0.46,
+          "CHAIRi": 0.14355083459787557,
+          "Recall": 0.79774797979798
+        },
+        "S": {
+          "CHAIRs": 0.454,
+          "CHAIRi": 0.14238510063082008,
+          "Recall": 0.7950501443001443
+        },
+        "AV": {
+          "CHAIRs": 0.472,
+          "CHAIRi": 0.13974040320353492,
+          "Recall": 0.8366374458874465
+        },
+        "AS": {
+          "CHAIRs": 0.432,
+          "CHAIRi": 0.12933484934621944,
+          "Recall": 0.8285391053391056
+        },
+        "VS": {
+          "CHAIRs": 0.278,
+          "CHAIRi": 0.10954940057875155,
+          "Recall": 0.705422366522366
+        },
+        "AVS": {
+          "CHAIRs": 0.358,
+          "CHAIRi": 0.10097719869706841,
+          "Recall": 0.8094898989898994
+        }
+      },
+      "pope": {
+        "vanilla": {
+          "accuracy": 0.7906666666666666,
+          "precision": 0.844391785150079,
+          "recall": 0.7126666666666667,
+          "f1": 0.7729573391178598
+        },
+        "A": {
+          "accuracy": 0.8236666666666667,
+          "precision": 0.8813825608798115,
+          "recall": 0.748,
+          "f1": 0.8092318788315903
+        },
+        "V": {
+          "accuracy": 0.7746666666666666,
+          "precision": 0.7184517497348887,
+          "recall": 0.9033333333333333,
+          "f1": 0.8003544004725339
+        },
+        "S": {
+          "accuracy": 0.7966666666666666,
+          "precision": 0.8361027190332326,
+          "recall": 0.738,
+          "f1": 0.7839943342776204
+        },
+        "AV": {
+          "accuracy": 0.8323333333333334,
+          "precision": 0.832111925383078,
+          "recall": 0.8326666666666667,
+          "f1": 0.8323892035988004
+        },
+        "AS": {
+          "accuracy": 0.827,
+          "precision": 0.8752869166029075,
+          "recall": 0.7626666666666667,
+          "f1": 0.8151050944068401
+        },
+        "VS": {
+          "accuracy": 0.763,
+          "precision": 0.6995447647951442,
+          "recall": 0.922,
+          "f1": 0.7955133735979293
+        },
+        "AVS": {
+          "accuracy": 0.8363333333333334,
+          "precision": 0.8278102664067576,
+          "recall": 0.8493333333333334,
+          "f1": 0.8384336952945047
+        }
+      }
+    },
+    "full_leave_one_out": {
+      "chair": {
+        "CHAIRs": {
+          "A": -0.07999999999999996,
+          "V": 0.07400000000000001,
+          "S": 0.11399999999999999
+        },
+        "CHAIRi": {
+          "A": 0.008572201881683145,
+          "V": 0.028357650649151037,
+          "S": 0.03876320450646652
+        },
+        "Recall": {
+          "A": 0.10406753246753342,
+          "V": -0.01904920634920615,
+          "S": -0.02714754689754706
+        }
+      },
+      "pope": {
+        "accuracy": {
+          "A": 0.07333333333333336,
+          "V": 0.009333333333333416,
+          "S": 0.0040000000000000036
+        },
+        "precision": {
+          "A": 0.12826550161161343,
+          "V": -0.04747665019614988,
+          "S": -0.004301658976320399
+        },
+        "recall": {
+          "A": -0.07266666666666666,
+          "V": 0.08666666666666667,
+          "S": 0.01666666666666672
+        },
+        "f1": {
+          "A": 0.04292032169657545,
+          "V": 0.02332860088766464,
+          "S": 0.006044491695704313
+        }
+      }
+    },
+    "shapley": {
+      "chair": {
+        "CHAIRs": {
+          "A": -0.017666666666666636,
+          "V": 0.07733333333333334,
+          "S": 0.10033333333333333
+        },
+        "CHAIRi": {
+          "A": 0.014907265889013054,
+          "V": 0.020910751835597832,
+          "S": 0.026696395747783323
+        },
+        "Recall": {
+          "A": 0.057680098605099,
+          "V": -0.025437469937470182,
+          "S": -0.03083555796055846
+        }
+      },
+      "pope": {
+        "accuracy": {
+          "A": 0.05011111111111114,
+          "V": -0.006388888888888851,
+          "S": 0.001944444444444452
+        },
+        "precision": {
+          "A": 0.080559487983426,
+          "V": -0.08877699349291704,
+          "S": -0.008364013233830328
+        },
+        "recall": {
+          "A": -0.020111111111111097,
+          "V": 0.13722222222222222,
+          "S": 0.019555555555555583
+        },
+        "f1": {
+          "A": 0.036922547679349674,
+          "V": 0.02268794809536608,
+          "S": 0.005865860401929176
+        }
+      }
+    },
+    "interactions": {
+      "chair": {
+        "CHAIRs": {
+          "pairwise": {
+            "AV": -0.033999999999999975,
+            "AS": 0.0,
+            "VS": 0.118
+          },
+          "third_order": -0.068
+        },
+        "CHAIRi": {
+          "pairwise": {
+            "AV": -0.023908823051544736,
+            "AS": -0.01466900316128475,
+            "VS": 0.012894922480481463
+          },
+          "third_order": 0.01943077364862726
+        },
+        "Recall": {
+          "pairwise": {
+            "AV": 0.006105916305916836,
+            "AS": 0.0007054112554115699,
+            "VS": -0.07929292929292919
+          },
+          "third_order": 0.06447265512265532
+        }
+      },
+      "pope": {
+        "accuracy": {
+          "pairwise": {
+            "AV": 0.024666666666666726,
+            "AS": -0.002666666666666706,
+            "VS": -0.01766666666666661
+          },
+          "third_order": 0.018333333333333313
+        },
+        "precision": {
+          "pairwise": {
+            "AV": 0.07666939991845678,
+            "AS": 0.002193421839942311,
+            "VS": -0.010617918822898198
+          },
+          "third_order": 0.01241190412348181
+        },
+        "recall": {
+          "pairwise": {
+            "AV": -0.10599999999999998,
+            "AS": -0.010666666666666602,
+            "VS": -0.006666666666666599
+          },
+          "third_order": 0.0086666666666666
+        },
+        "f1": {
+          "pairwise": {
+            "AV": -0.004239736587464016,
+            "AS": -0.005163779584510864,
+            "VS": -0.01587802203436528
+          },
+          "third_order": 0.016049298154819813
+        }
+      }
+    },
+    "total_gain_vs_vanilla": {
+      "chair": {
+        "CHAIRs": 0.16000000000000003,
+        "CHAIRi": 0.06251441347239421,
+        "Recall": 0.001407070707070357
+      },
+      "pope": {
+        "accuracy": 0.045666666666666744,
+        "precision": -0.016581518743321366,
+        "recall": 0.13666666666666671,
+        "f1": 0.06547635617664493
+      }
+    }
+  },
+  "artifacts": {
+    "chair": {
+      "": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/chair_llava_7b_shield_vanilla_b32_20260921.metrics.json",
+        "status": "PASS",
+        "count": 500,
+        "components": [],
+        "protocol": {
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 512,
+          "seed": 42,
+          "batch_size": 32,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4,
+          "cache": "dynamic",
+          "image_feature_cache": true,
+          "prompt": "Please describe this image in detail."
+        },
+        "acceleration": {
+          "requested_attention": "auto",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 289824,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      },
+      "A": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/chair_llava_7b_shield_cumulative_adaptive_b32_20260922.metrics.json",
+        "status": "PASS",
+        "count": 500,
+        "components": [
+          "A"
+        ],
+        "protocol": {
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 512,
+          "seed": 42,
+          "batch_size": 32,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4,
+          "cache": "dynamic"
+        },
+        "acceleration": {
+          "requested_attention": "auto",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 508992,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      },
+      "V": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/chair_llava_7b_shield_subset_vulnerability_protocolfix_20260922.metrics.json",
+        "status": "PASS",
+        "count": 500,
+        "components": [
+          "V"
+        ],
+        "protocol": {
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 512,
+          "seed": 42,
+          "batch_size": 32,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4,
+          "cache": "dynamic",
+          "pope_answer_instruction": null
+        },
+        "acceleration": {
+          "requested_attention": "auto",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 606144,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      },
+      "S": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/chair_llava_7b_shield_subset_statistical_protocolfix_20260922.metrics.json",
+        "status": "PASS",
+        "count": 500,
+        "components": [
+          "S"
+        ],
+        "protocol": {
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 512,
+          "seed": 42,
+          "batch_size": 32,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4,
+          "cache": "dynamic",
+          "pope_answer_instruction": null
+        },
+        "acceleration": {
+          "requested_attention": "auto",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 589440,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      },
+      "AV": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/chair_llava_7b_shield_cumulative_vulnerability_lr002_b32_20260922.metrics.json",
+        "status": "PASS",
+        "count": 500,
+        "components": [
+          "A",
+          "V"
+        ],
+        "protocol": {
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 512,
+          "seed": 42,
+          "batch_size": 32,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4,
+          "cache": "dynamic"
+        },
+        "acceleration": {
+          "requested_attention": "auto",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 523200,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      },
+      "AS": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/chair_llava_7b_shield_subset_adaptive_statistical_protocolfix_20260922.metrics.json",
+        "status": "PASS",
+        "count": 500,
+        "components": [
+          "A",
+          "S"
+        ],
+        "protocol": {
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 512,
+          "seed": 42,
+          "batch_size": 32,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4,
+          "cache": "dynamic",
+          "pope_answer_instruction": null
+        },
+        "acceleration": {
+          "requested_attention": "auto",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 520704,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      },
+      "VS": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/chair_llava_7b_shield_subset_vulnerability_statistical_protocolfix_20260922.metrics.json",
+        "status": "PASS",
+        "count": 500,
+        "components": [
+          "V",
+          "S"
+        ],
+        "protocol": {
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 512,
+          "seed": 42,
+          "batch_size": 32,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4,
+          "cache": "dynamic",
+          "pope_answer_instruction": null
+        },
+        "acceleration": {
+          "requested_attention": "auto",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 577536,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      },
+      "AVS": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/chair_llava_7b_shield_cumulative_statistical_b32_20260922.metrics.json",
+        "status": "PASS",
+        "count": 500,
+        "components": [
+          "A",
+          "V",
+          "S"
+        ],
+        "protocol": {
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 512,
+          "seed": 42,
+          "batch_size": 32,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4,
+          "cache": "dynamic"
+        },
+        "acceleration": {
+          "requested_attention": "auto",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 545856,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      }
+    },
+    "pope": {
+      "": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/pope_llava_7b_adversarial_promptfix_vanilla_20260922.metrics.json",
+        "status": "PASS",
+        "count": 3000,
+        "components": [],
+        "protocol": {
+          "dtype": "bfloat16",
+          "attention": "flash_attention_2",
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 8,
+          "system_prompt": "A chat between a curious human and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the human's questions.",
+          "prompt_template": "{system_prompt} USER: <image>\\n{question} Please answer this question with one word. ASSISTANT:",
+          "pope_answer_instruction": true,
+          "seed": 42,
+          "batch_size": 8,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4
+        },
+        "acceleration": {
+          "requested_attention": "flash_attention_2",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 72096,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      },
+      "A": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/pope_llava_7b_adversarial_cumulative_adaptive_official_20260922.metrics.json",
+        "status": "PASS",
+        "count": 3000,
+        "components": [
+          "A"
+        ],
+        "protocol": {
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 8,
+          "seed": 42,
+          "batch_size": 8,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4,
+          "cache": "dynamic",
+          "pope_answer_instruction": true
+        },
+        "acceleration": {
+          "requested_attention": "auto",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 144000,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      },
+      "V": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/pope_llava_7b_adversarial_subset_vulnerability_official_20260922.metrics.json",
+        "status": "PASS",
+        "count": 3000,
+        "components": [
+          "V"
+        ],
+        "protocol": {
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 8,
+          "seed": 42,
+          "batch_size": 8,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4,
+          "cache": "dynamic",
+          "pope_answer_instruction": true
+        },
+        "acceleration": {
+          "requested_attention": "auto",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 144384,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      },
+      "S": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/pope_llava_7b_adversarial_subset_statistical_official_20260922.metrics.json",
+        "status": "PASS",
+        "count": 3000,
+        "components": [
+          "S"
+        ],
+        "protocol": {
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 8,
+          "seed": 42,
+          "batch_size": 8,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4,
+          "cache": "dynamic",
+          "pope_answer_instruction": true
+        },
+        "acceleration": {
+          "requested_attention": "auto",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 144192,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      },
+      "AV": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/pope_llava_7b_adversarial_cumulative_vulnerability_official_20260922.metrics.json",
+        "status": "PASS",
+        "count": 3000,
+        "components": [
+          "A",
+          "V"
+        ],
+        "protocol": {
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 8,
+          "seed": 42,
+          "batch_size": 8,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4,
+          "cache": "dynamic",
+          "pope_answer_instruction": true
+        },
+        "acceleration": {
+          "requested_attention": "auto",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 144000,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      },
+      "AS": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/pope_llava_7b_adversarial_subset_adaptive_statistical_official_20260922.metrics.json",
+        "status": "PASS",
+        "count": 3000,
+        "components": [
+          "A",
+          "S"
+        ],
+        "protocol": {
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 8,
+          "seed": 42,
+          "batch_size": 8,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4,
+          "cache": "dynamic",
+          "pope_answer_instruction": true
+        },
+        "acceleration": {
+          "requested_attention": "auto",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 144000,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      },
+      "VS": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/pope_llava_7b_adversarial_subset_vulnerability_statistical_official_20260922.metrics.json",
+        "status": "PASS",
+        "count": 3000,
+        "components": [
+          "V",
+          "S"
+        ],
+        "protocol": {
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 8,
+          "seed": 42,
+          "batch_size": 8,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4,
+          "cache": "dynamic",
+          "pope_answer_instruction": true
+        },
+        "acceleration": {
+          "requested_attention": "auto",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 159936,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      },
+      "AVS": {
+        "path": "/data/lcq/Downloads/ONLY/outputs/pope_llava_7b_adversarial_cumulative_statistical_official_20260922.metrics.json",
+        "status": "PASS",
+        "count": 3000,
+        "components": [
+          "A",
+          "V",
+          "S"
+        ],
+        "protocol": {
+          "decoding": "sample",
+          "temperature": 1.0,
+          "top_p": 1.0,
+          "top_k": null,
+          "max_new_tokens": 8,
+          "seed": 42,
+          "batch_size": 8,
+          "image_batch_size": 16,
+          "num_workers": 4,
+          "prefetch_factor": 4,
+          "cache": "dynamic",
+          "pope_answer_instruction": true
+        },
+        "acceleration": {
+          "requested_attention": "auto",
+          "effective_attention": "flash_attention_2",
+          "flash_attn_version": "2.8.3",
+          "dtype": "bfloat16",
+          "tf32": true,
+          "fp8_requested": true,
+          "fp8_capability_ready": true,
+          "fp8_effective": true,
+          "fp8_scope": "text_mlp",
+          "fp8_linear_count": 96,
+          "fp8_calls": 144000,
+          "fp8_native_fallback_calls": 0,
+          "fallback_events": [],
+          "image_feature_cache": true,
+          "image_feature_count": 500
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+# @package _global_
+
+task_name: debug
+extras:
+  ignore_warnings: false
+  enforce_tags: false
+  print_config: true
+  save_config_tree: true
+env:
+  distributed_backend: gloo
+  cpu_backend: gloo
+  timeout_seconds: 120
+  device: cpu
+batch_size: 1
+num_workers: 0
+
+hydra:
+  job_logging:
+    root:
+      level: DEBUG

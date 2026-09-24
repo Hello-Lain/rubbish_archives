@@ -1,0 +1,27 @@
+# syntax=docker/dockerfile:1.7
+# Reuses the host's existing FlashAttention image; do not replace it with a
+# newly downloaded PyTorch base. Build with the uv wheelhouse as context so
+# the locally compiled Transformer Engine extension is available to COPY:
+# docker build -f /data/lcq/Downloads/ONLY/Dockerfile.qwen-accel \
+#   -t only-qwen25-accel:local /data/lcq/.cache/uv/wheelhouse
+FROM harness-flash-attn-wheel:torch2.8.0-flash2.8.3-py3.11
+
+COPY transformer_engine_torch-2.8.0-cp311-cp311-linux_x86_64.whl /tmp/wheels/
+
+RUN python -m pip install --no-cache-dir \
+      --find-links=/wheelhouse \
+      --find-links=/tmp/wheels \
+      /wheelhouse/flash_attn-2.8.3-cp311-cp311-linux_x86_64.whl \
+      /tmp/wheels/transformer_engine_torch-2.8.0-cp311-cp311-linux_x86_64.whl \
+      transformer-engine==2.8.0 \
+      transformer-engine-cu12==2.8.0 \
+      transformers==4.57.6 \
+      qwen-vl-utils==0.0.14 \
+      accelerate \
+      pillow
+
+ENV HF_HOME=/data/lcq/.cache/huggingface
+ENV HF_HUB_CACHE=/data/lcq/.cache/huggingface/hub
+ENV HUGGINGFACE_HUB_CACHE=/data/lcq/.cache/huggingface/hub
+ENV TOKENIZERS_PARALLELISM=false
+ENV PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple

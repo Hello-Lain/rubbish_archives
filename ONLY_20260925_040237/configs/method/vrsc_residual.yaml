@@ -1,0 +1,6 @@
+_target_: methods.vrsc.VRSCMethod
+eta: 0.25
+evidence_weight: 2.0
+trust: 1.0
+response_clip: 1.0
+response_mode: orthogonal_residual

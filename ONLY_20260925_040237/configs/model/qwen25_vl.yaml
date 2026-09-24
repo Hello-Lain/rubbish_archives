@@ -1,0 +1,16 @@
+defaults:
+  - hf
+  - _self_
+
+path: ${oc.env:QWEN25_VL_MODEL,${paths.hf_hub_root}/models--Qwen--Qwen2.5-VL-3B-Instruct/snapshots/66285546d2b821cf421d4f5eb2576359d3770cd3}
+model_family: qwen25_vl
+torch_dtype: bfloat16
+attn_implementation: auto
+trust_remote_code: false
+
+# These fields document the canonical runtime intent. The verified legacy
+# POPE runner owns the actual optional-kernel capability/effectiveness report.
+fp8: true
+fp8_scope: text_mlp
+tf32: true
+fallback: true

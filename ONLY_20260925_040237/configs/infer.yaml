@@ -1,0 +1,22 @@
+defaults:
+  - _self_
+  - data: mock
+  - model: mock
+  - method: standard
+  - env: default
+  - paths: default
+  - extras: default
+  - hydra: default
+  - logger: null
+  - experiment: null
+  - hparams_search: null
+  - optional local: default
+  - debug: null
+
+task_name: infer
+tags: ["dev"]
+seed: 42
+batch_size: 2
+num_workers: 0
+output_path: ${paths.infer_output_file}
+optimized_metric: null

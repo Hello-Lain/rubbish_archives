@@ -1,0 +1,5 @@
+backend: vlmeval
+datasets:
+  - MMBench_DEV_EN
+dataset_kwargs: {}
+judge: {}
