@@ -1,0 +1,12 @@
+_target_: methods.gtp.GTPMethod
+mode: legacy
+max_evidence_weight: 0.75
+minimum_evidence_fraction: 0.0
+trust: 1.0
+signal_scale: 0.000001
+disagreement_scale: 0.08
+sharpness: 1.0
+specificity_temperature: 0.5
+support_margin: 0.0
+correction_clip: 4.0
+candidate_top_k: 128
