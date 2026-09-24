@@ -1,0 +1,2 @@
+_target_: utils.experiment_logger.JsonlExperimentLogger
+path: ${paths.output_dir}/metrics.jsonl

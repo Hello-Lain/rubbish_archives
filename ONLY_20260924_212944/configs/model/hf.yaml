@@ -1,0 +1,14 @@
+_target_: models.hf.HFMLLMWrapper
+path: ${oc.env:MODEL_PATH,""}
+model_family: auto
+torch_dtype: bfloat16
+attn_implementation: auto
+low_cpu_mem_usage: true
+device_map: null
+trust_remote_code: false
+local_files_only: true
+max_new_tokens: 8
+do_sample: true
+temperature: 1.0
+top_p: 1.0
+cache_implementation: dynamic

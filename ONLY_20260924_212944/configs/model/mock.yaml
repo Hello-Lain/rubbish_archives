@@ -1,0 +1,5 @@
+_target_: models.mock.MockMLLMWrapper
+path: mock://mllm
+dtype: bfloat16
+attn_implementation: flash_attention_2
+low_cpu_mem_usage: true

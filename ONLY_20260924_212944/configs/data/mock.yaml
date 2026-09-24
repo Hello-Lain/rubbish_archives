@@ -1,0 +1,17 @@
+_target_: data.mock_dataset.MockDataset
+samples:
+  - id: sample-001
+    image_path: mock://image-001
+    prompt: Describe the scene.
+  - id: sample-002
+    image_path: mock://image-002
+    prompt: Count the objects.
+  - id: sample-003
+    image_path: mock://image-003
+    prompt: Read the text.
+  - id: sample-004
+    image_path: mock://image-004
+    prompt: Identify the main color.
+  - id: sample-005
+    image_path: mock://image-005
+    prompt: Summarize the visual content.

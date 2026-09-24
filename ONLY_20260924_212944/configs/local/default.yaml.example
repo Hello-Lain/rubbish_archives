@@ -1,0 +1,9 @@
+# Copy this file to configs/local/default.yaml for machine-specific overrides.
+# The copied file is ignored by git.
+paths:
+  root_dir: ${oc.env:PROJECT_ROOT,.}
+  hf_hub_root: ${oc.env:HF_HUB_CACHE,/data/lcq/.cache/huggingface/hub}
+
+# Example:
+# model:
+#   path: /data/lcq/.cache/huggingface/hub/<snapshot>

@@ -1,0 +1,26 @@
+defaults:
+  - _self_
+  - data: mock
+  - eval_tasks: default
+  - model: mock
+  - method: standard
+  - env: default
+  - paths: default
+  - extras: default
+  - hydra: default
+  - logger: null
+  - experiment: null
+  - hparams_search: null
+  - optional local: default
+  - debug: null
+
+task_name: eval
+tags: ["dev"]
+seed: 42
+method_name: vanilla
+model_name: only-research
+api_nproc: 1
+retry_failed: true
+verbose: false
+mode: eval
+optimized_metric: null

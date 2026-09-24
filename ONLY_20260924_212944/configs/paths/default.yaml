@@ -1,0 +1,7 @@
+root_dir: ${oc.env:PROJECT_ROOT,.}
+hf_hub_root: ${oc.env:HF_HUB_CACHE,/data/lcq/.cache/huggingface/hub}
+log_dir: ${paths.root_dir}/logs
+output_dir: ${hydra:runtime.output_dir}
+work_dir: ${hydra:runtime.cwd}
+infer_output_file: ${paths.output_dir}/predictions.jsonl
+eval_output_dir: ${paths.output_dir}/eval
