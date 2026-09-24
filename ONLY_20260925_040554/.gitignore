@@ -1,0 +1,12 @@
+.venv/
+.env
+.codex/
+configs/local/default.yaml
+logs/
+outputs/
+*.py[cod]
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.DS_Store

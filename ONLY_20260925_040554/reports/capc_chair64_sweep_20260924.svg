@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+  <rect width="1100" height="620" fill="#fbfaf6"/>
+  <text x="550" y="34" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="700" fill="#1d252c">CAP-C CHAIR-64 Gain Sweep</text>
+  <text x="550" y="60" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#5c6870">Corrected contrastive-hidden protocol; lower CHAIRs is better</text>
+
+  <rect x="72" y="88" width="670" height="440" fill="#ffffff" stroke="#c7c2b8"/>
+  <line x1="118" y1="478" x2="700" y2="478" stroke="#59636a" stroke-width="1.5"/>
+  <line x1="118" y1="118" x2="118" y2="478" stroke="#59636a" stroke-width="1.5"/>
+
+  <line x1="118" y1="478" x2="700" y2="478" stroke="#e2ded5"/>
+  <line x1="118" y1="388" x2="700" y2="388" stroke="#e2ded5"/>
+  <line x1="118" y1="298" x2="700" y2="298" stroke="#e2ded5"/>
+  <line x1="118" y1="208" x2="700" y2="208" stroke="#e2ded5"/>
+  <line x1="118" y1="118" x2="700" y2="118" stroke="#e2ded5"/>
+  <text x="106" y="483" text-anchor="end" font-family="sans-serif" font-size="12" fill="#536069">0.40</text>
+  <text x="106" y="393" text-anchor="end" font-family="sans-serif" font-size="12" fill="#536069">0.45</text>
+  <text x="106" y="303" text-anchor="end" font-family="sans-serif" font-size="12" fill="#536069">0.50</text>
+  <text x="106" y="213" text-anchor="end" font-family="sans-serif" font-size="12" fill="#536069">0.55</text>
+  <text x="106" y="123" text-anchor="end" font-family="sans-serif" font-size="12" fill="#536069">0.60</text>
+  <text x="38" y="310" transform="rotate(-90 38 310)" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#354149">CHAIRs</text>
+  <text x="409" y="555" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#354149">probe gain</text>
+
+  <line x1="118" y1="265" x2="700" y2="265" stroke="#b24b3b" stroke-dasharray="8 6" stroke-width="1.5"/>
+  <text x="695" y="257" text-anchor="end" font-family="sans-serif" font-size="12" fill="#b24b3b">vanilla 0.609375</text>
+  <line x1="118" y1="298" x2="700" y2="298" stroke="#9b7c2e" stroke-dasharray="4 5" stroke-width="1.2"/>
+  <text x="695" y="291" text-anchor="end" font-family="sans-serif" font-size="12" fill="#9b7c2e">gate target 0.508</text>
+
+  <polyline fill="none" stroke="#176b87" stroke-width="4" points="118,214.6 201,118 284,361 367,186 450,118 533,118 616,118 700,243"/>
+  <circle cx="118" cy="214.6" r="6" fill="#176b87"/>
+  <circle cx="201" cy="118" r="6" fill="#176b87"/>
+  <circle cx="284" cy="361" r="8" fill="#e27632" stroke="#7d3c1b" stroke-width="2"/>
+  <circle cx="367" cy="186" r="6" fill="#176b87"/>
+  <circle cx="450" cy="118" r="6" fill="#176b87"/>
+  <circle cx="533" cy="118" r="6" fill="#176b87"/>
+  <circle cx="616" cy="118" r="6" fill="#176b87"/>
+  <circle cx="700" cy="243" r="6" fill="#176b87"/>
+  <text x="284" y="385" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#7d3c1b">g*=0.15</text>
+
+  <text x="118" y="500" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#536069">0.05</text>
+  <text x="201" y="500" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#536069">0.10</text>
+  <text x="284" y="500" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#536069">0.15</text>
+  <text x="367" y="500" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#536069">0.20</text>
+  <text x="450" y="500" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#536069">0.30</text>
+  <text x="533" y="500" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#536069">0.40</text>
+  <text x="616" y="500" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#536069">0.50</text>
+  <text x="700" y="500" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#536069">0.60</text>
+
+  <rect x="790" y="112" width="245" height="116" rx="8" fill="#fff5e8" stroke="#e27632"/>
+  <text x="812" y="140" font-family="sans-serif" font-size="14" font-weight="700" fill="#7d3c1b">Gate result</text>
+  <text x="812" y="164" font-family="sans-serif" font-size="13" fill="#354149">CHAIRs: PASS</text>
+  <text x="812" y="186" font-family="sans-serif" font-size="13" fill="#354149">Recall: PASS</text>
+  <text x="812" y="208" font-family="sans-serif" font-size="13" fill="#b24b3b">Curve: FAIL</text>
+
+  <rect x="790" y="260" width="245" height="168" rx="8" fill="#f0f4f3" stroke="#8ea5a1"/>
+  <text x="812" y="288" font-family="sans-serif" font-size="14" font-weight="700" fill="#354149">Interpretation</text>
+  <text x="812" y="314" font-family="sans-serif" font-size="13" fill="#354149">min = 0.468750</text>
+  <text x="812" y="336" font-family="sans-serif" font-size="13" fill="#354149">max adjacent jump</text>
+  <text x="812" y="358" font-family="sans-serif" font-size="13" fill="#b24b3b">0.156250 &gt; 0.05</text>
+  <text x="812" y="390" font-family="sans-serif" font-size="13" fill="#354149">No holdout/full run</text>
+  <text x="812" y="412" font-family="sans-serif" font-size="13" fill="#354149">after failed gate.</text>
+
+  <text x="550" y="594" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#68737a">CAP-C corrected sweep; historical CAP-v1 outputs are not mixed into this curve.</text>
+</svg>
