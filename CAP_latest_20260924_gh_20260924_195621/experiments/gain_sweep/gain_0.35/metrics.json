@@ -1,0 +1,73 @@
+{
+  "status": "SMOKE",
+  "method": "cap",
+  "method_config": {
+    "probe_gain": 0.35
+  },
+  "branch_routing": [
+    "base",
+    "cap",
+    null
+  ],
+  "response_diagnostics": {
+    "decode_calls": 351,
+    "semantic_delta_max": 12.40625
+  },
+  "count": 64,
+  "protocol": {
+    "seed": 42,
+    "batch_size": 32,
+    "image_batch_size": 16,
+    "num_workers": 4,
+    "prefetch_factor": 4,
+    "max_new_tokens": 512,
+    "decoding": "sample",
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": null,
+    "pope_answer_instruction": false,
+    "cap_probe_gain": 0.35,
+    "cache": "dynamic",
+    "generation_vocab_size": 32002
+  },
+  "metrics": {
+    "CHAIRs": 0.59375,
+    "CHAIRi": 0.195852534562212,
+    "Recall": 0.8109374999999999,
+    "hallucinated_objects": 85,
+    "mentioned_objects": 434
+  },
+  "acceleration": {
+    "requested_attention": "flash_attention_2",
+    "effective_attention": "flash_attention_2",
+    "flash_attn_version": "2.8.3",
+    "dtype": "bfloat16",
+    "tf32": true,
+    "fp8_requested": true,
+    "fp8_capability_ready": true,
+    "fp8_effective": true,
+    "fp8_scope": "text_mlp",
+    "fp8_linear_count": 96,
+    "fp8_calls": 67584,
+    "fp8_native_fallback_calls": 0,
+    "fallback_events": [],
+    "image_feature_cache": true,
+    "image_feature_count": 0
+  },
+  "generation_seconds": 38.1228748857975,
+  "peak_memory_gib": 39.76254940032959,
+  "mean_words": 93.421875,
+  "caption_token_injection": false,
+  "manifest": "/data/lcq/Downloads/ONLY/outputs/cap_chair64_gain_0.35_20260924/manifest.json",
+  "model_revision": "b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+  "model_config_sha256": "0bde54495c54bcc346064a0d314b010d1c4d3ca7f7e583b6f711949a35352c0f",
+  "data_sha256": "d94e5b7f28bfc7ce74f8bf29c013436da52e5ab9697a7332aaaadbf7628d7a1e",
+  "source_hashes": {
+    "scripts/vrsc_probe.py": "064761f26c157f9dea60386d6b0a8f4573b686ebff220126dd5ab904f1f149f0",
+    "src/methods/vrsc.py": "07db223bceaec1fb4aabe192c02b9c45bf5fa21806af04990ee0c9a738626b15",
+    "src/methods/evidence_consensus.py": "71c67ca9a21aa19fb8edc29113521622a235fd621d3118bfb680966c2da267ef",
+    "src/methods/gtp.py": "9bccf92714199da44bb330ed68315c964bf3c71f25b2d508d3ad1c4b693bd067",
+    "src/methods/cap.py": "a5e35ac7a15a7b5b26bc8bad916cdc3f1314aa022da0abe14bab4074d8d0d528",
+    "scripts/shield_vulnerability_runtime.py": "3e0c17beeb931581ceea671f4116de0a4793ccfa0be2ecdf760ca42c5c31b37f"
+  }
+}

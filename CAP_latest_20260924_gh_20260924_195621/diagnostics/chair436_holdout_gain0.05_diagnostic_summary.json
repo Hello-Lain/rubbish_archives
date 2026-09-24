@@ -1,0 +1,38 @@
+{
+  "dataset": "chair436_holdout_gain0.05",
+  "source": "outputs/cap_chair436_holdout_gain0.05_20260924/probe_diagnostics.json",
+  "diagnostic_scope_counts": {
+    "question": 436
+  },
+  "row_count": 436,
+  "unique_cache_keys": 436,
+  "score_lengths": [
+    576
+  ],
+  "unique_images": 436,
+  "unique_question_ids": 436,
+  "attribution_stats": {
+    "min": -0.05904985964298248,
+    "max": 0.05560256913304329,
+    "mean": -0.012677011557123327,
+    "stddev": 0.016261601131859912
+  },
+  "acceleration": {
+    "requested_attention": "flash_attention_2",
+    "effective_attention": "flash_attention_2",
+    "flash_attn_version": "2.8.3",
+    "dtype": "bfloat16",
+    "tf32": true,
+    "fp8_requested": true,
+    "fp8_capability_ready": true,
+    "fp8_effective": true,
+    "fp8_scope": "text_mlp",
+    "fp8_linear_count": 96,
+    "fp8_calls": 505536,
+    "fp8_native_fallback_calls": 0,
+    "fallback_events": [],
+    "image_feature_cache": true,
+    "image_feature_count": 0
+  },
+  "raw_compressed_diagnostic": "diagnostics/chair436_holdout_probe_diagnostics.json.gz"
+}

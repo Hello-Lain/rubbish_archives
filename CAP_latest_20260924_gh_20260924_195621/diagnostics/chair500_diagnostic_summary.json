@@ -1,0 +1,38 @@
+{
+  "dataset": "chair500",
+  "source": "outputs/cap_chair500_caponly_20260924/probe_diagnostics.json",
+  "diagnostic_scope_counts": {
+    "question": 500
+  },
+  "row_count": 500,
+  "unique_cache_keys": 500,
+  "score_lengths": [
+    576
+  ],
+  "unique_images": 500,
+  "unique_question_ids": 500,
+  "attribution_stats": {
+    "min": -0.05904985964298248,
+    "max": 0.05560256913304329,
+    "mean": -0.012707694989597906,
+    "stddev": 0.016192437004680312
+  },
+  "acceleration": {
+    "requested_attention": "flash_attention_2",
+    "effective_attention": "flash_attention_2",
+    "flash_attn_version": "2.8.3",
+    "dtype": "bfloat16",
+    "tf32": true,
+    "fp8_requested": true,
+    "fp8_capability_ready": true,
+    "fp8_effective": true,
+    "fp8_scope": "text_mlp",
+    "fp8_linear_count": 96,
+    "fp8_calls": 576576,
+    "fp8_native_fallback_calls": 0,
+    "fallback_events": [],
+    "image_feature_cache": true,
+    "image_feature_count": 0
+  },
+  "raw_compressed_diagnostic": "diagnostics/chair500_probe_diagnostics.json.gz"
+}

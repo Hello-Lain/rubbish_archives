@@ -1,0 +1,110 @@
+[
+  {
+    "gain": 0.05,
+    "status": "SMOKE",
+    "count": 64,
+    "CHAIRs": 0.5,
+    "CHAIRi": 0.167816091954023,
+    "Recall": 0.8014322916666664,
+    "effective_attention": "flash_attention_2",
+    "fp8_effective": true,
+    "fp8_native_fallback_calls": 0,
+    "fallback_events": []
+  },
+  {
+    "gain": 0.1,
+    "status": "SMOKE",
+    "count": 64,
+    "CHAIRs": 0.609375,
+    "CHAIRi": 0.18376068376068377,
+    "Recall": 0.8135416666666665,
+    "effective_attention": "flash_attention_2",
+    "fp8_effective": true,
+    "fp8_native_fallback_calls": 0,
+    "fallback_events": []
+  },
+  {
+    "gain": 0.15,
+    "status": "SMOKE",
+    "count": 64,
+    "CHAIRs": 0.53125,
+    "CHAIRi": 0.18040089086859687,
+    "Recall": 0.8080729166666666,
+    "effective_attention": "flash_attention_2",
+    "fp8_effective": true,
+    "fp8_native_fallback_calls": 0,
+    "fallback_events": []
+  },
+  {
+    "gain": 0.2,
+    "status": "SMOKE",
+    "count": 64,
+    "CHAIRs": 0.578125,
+    "CHAIRi": 0.1828193832599119,
+    "Recall": 0.8066406249999999,
+    "effective_attention": "flash_attention_2",
+    "fp8_effective": true,
+    "fp8_native_fallback_calls": 0,
+    "fallback_events": []
+  },
+  {
+    "gain": 0.25,
+    "status": "SMOKE",
+    "count": 64,
+    "CHAIRs": 0.609375,
+    "CHAIRi": 0.16818181818181818,
+    "Recall": 0.8263020833333331,
+    "effective_attention": "flash_attention_2",
+    "fp8_effective": true,
+    "fp8_native_fallback_calls": 0,
+    "fallback_events": []
+  },
+  {
+    "gain": 0.3,
+    "status": "SMOKE",
+    "count": 64,
+    "CHAIRs": 0.578125,
+    "CHAIRi": 0.15991471215351813,
+    "Recall": 0.8270833333333331,
+    "effective_attention": "flash_attention_2",
+    "fp8_effective": true,
+    "fp8_native_fallback_calls": 0,
+    "fallback_events": []
+  },
+  {
+    "gain": 0.35,
+    "status": "SMOKE",
+    "count": 64,
+    "CHAIRs": 0.59375,
+    "CHAIRi": 0.195852534562212,
+    "Recall": 0.8109374999999999,
+    "effective_attention": "flash_attention_2",
+    "fp8_effective": true,
+    "fp8_native_fallback_calls": 0,
+    "fallback_events": []
+  },
+  {
+    "gain": 0.4,
+    "status": "SMOKE",
+    "count": 64,
+    "CHAIRs": 0.59375,
+    "CHAIRi": 0.17371937639198218,
+    "Recall": 0.7988281249999999,
+    "effective_attention": "flash_attention_2",
+    "fp8_effective": true,
+    "fp8_native_fallback_calls": 0,
+    "fallback_events": []
+  },
+  {
+    "gain": 0.5,
+    "status": "SMOKE",
+    "count": 64,
+    "CHAIRs": 0.609375,
+    "CHAIRi": 0.18243243243243243,
+    "Recall": 0.8164062499999998,
+    "effective_attention": "flash_attention_2",
+    "fp8_effective": true,
+    "fp8_native_fallback_calls": 0,
+    "fallback_events": []
+  }
+]

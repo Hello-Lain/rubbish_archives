@@ -1,0 +1,21 @@
+# Task 3 Verification
+
+- Status: complete
+- Scope adjustment: existing canonical Vanilla artifacts were reused instead of rerun, per user instruction. The CAP runs therefore used `--methods cap` only in new `caponly` directories. The earlier interrupted `vanilla,cap` directories remain as partial evidence and are excluded from formal results.
+- Reused Vanilla:
+  - POPE: `outputs/pope_llava_7b_adversarial_promptfix_vanilla_20260922.metrics.json`, `PASS`, `count=3000`
+  - CHAIR: `outputs/chair_llava_7b_shield_vanilla_b32_20260921.metrics.json`, `PASS`, `count=500`
+- CAP commands:
+  - `CUDA_VISIBLE_DEVICES=0 .venv/bin/python scripts/vrsc_probe.py --mode generate --dataset chair --limit 500 --methods cap --output outputs/cap_chair500_caponly_20260924 --cap-probe-gain 0.20`
+  - `CUDA_VISIBLE_DEVICES=1 .venv/bin/python scripts/vrsc_probe.py --mode generate --dataset pope --limit 3000 --methods cap --output outputs/cap_pope3000_caponly_20260924 --cap-probe-gain 0.20`
+- Full-count acceptance:
+  - CHAIR CAP: `status=PASS`, `count=500`, prediction rows `500`, diagnostics `500`, unique CAP keys `500`, attribution length `576`.
+  - POPE CAP: `status=PASS`, `count=3000`, prediction rows `3000`, diagnostics `3000`, unique CAP keys `3000`, attribution length `576`.
+  - Both runs have `caption_token_injection=false`.
+  - Both runs have `effective_attention=flash_attention_2`, `fp8_effective=true`, `fp8_native_fallback_calls=0`, and `fallback_events=[]`.
+- Results against reused Vanilla:
+  - CHAIR: Vanilla `CHAIRs=0.518000`, `CHAIRi=0.163492`, `Recall=0.808083`; CAP `0.542000`, `0.171534`, `0.796584`; deltas `+2.400`, `+0.804`, `-1.150` pp. This is a negative CHAIR result and is retained as evidence.
+  - POPE: Vanilla `Accuracy=79.0667%`, `Precision=84.4392%`, `Recall=71.2667%`, `F1=77.2957%`; CAP `79.4000%`, `84.1860%`, `72.4000%`, `77.8495%`; deltas `+0.333`, `-0.253`, `+1.133`, `+0.554` pp.
+- GPU post-check: both H100 GPUs returned to `14 MiB` used with no compute applications.
+- Environment: `uv pip check --python .venv/bin/python` passed before launch.
+- Follow-up: CHAIR CAP gain sweep and holdout/H2H are Task 4.

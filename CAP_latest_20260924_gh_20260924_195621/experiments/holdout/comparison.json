@@ -1,0 +1,36 @@
+{
+  "selection_rule": "minimize CHAIRs, then CHAIRi on CHAIR-64; selected gain=0.05",
+  "subset": {
+    "start": 64,
+    "limit": 436,
+    "count": 436
+  },
+  "methods": {
+    "vanilla": {
+      "CHAIRs": 0.5091743119266054,
+      "CHAIRi": 0.16163583252190847,
+      "Recall": 0.8098426929848952
+    },
+    "gtp_patch": {
+      "CHAIRs": 0.5022935779816514,
+      "CHAIRi": 0.1341500765696784,
+      "Recall": 0.842827356130109
+    },
+    "cap_gain0.05": {
+      "CHAIRs": 0.5389908256880734,
+      "CHAIRi": 0.17133333333333334,
+      "Recall": 0.8059571799250703
+    }
+  },
+  "cap_minus_vanilla_pp": {
+    "CHAIRs": 2.981651376146799,
+    "CHAIRi": 0.9697500811424874,
+    "Recall": -0.38855130598248744
+  },
+  "cap_minus_gtp_patch_pp": {
+    "CHAIRs": 3.669724770642202,
+    "CHAIRi": 3.7183256763654944,
+    "Recall": -3.687017620503863
+  },
+  "decision": "NO-GO for current CAP formulation as a publishable CHAIR improvement"
+}

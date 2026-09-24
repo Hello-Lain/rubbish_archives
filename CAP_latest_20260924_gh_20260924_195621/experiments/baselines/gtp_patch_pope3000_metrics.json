@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "method": "gtp_patch",
+  "method_config": {
+    "eta": 0.25,
+    "evidence_weight": 2.0,
+    "trust": 1.0,
+    "response_clip": 1.0,
+    "response_mode": "direct"
+  },
+  "branch_routing": [
+    "base",
+    "gtp_patch",
+    null
+  ],
+  "response_diagnostics": {
+    "decode_calls": 750,
+    "semantic_delta_max": 0.0
+  },
+  "count": 3000,
+  "protocol": {
+    "seed": 42,
+    "batch_size": 8,
+    "image_batch_size": 16,
+    "num_workers": 4,
+    "prefetch_factor": 4,
+    "max_new_tokens": 8,
+    "decoding": "sample",
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": null,
+    "pope_answer_instruction": true,
+    "cache": "dynamic",
+    "generation_vocab_size": 32002
+  },
+  "metrics": {
+    "count": 3000,
+    "accuracy": 0.825,
+    "precision": 0.8966639544344996,
+    "recall": 0.7346666666666667,
+    "f1": 0.807621839501649,
+    "yes_ratio": 0.4096666666666667,
+    "tp": 1102,
+    "tn": 1373,
+    "fp": 127,
+    "fn": 398
+  },
+  "acceleration": {
+    "requested_attention": "flash_attention_2",
+    "effective_attention": "flash_attention_2",
+    "flash_attn_version": "2.8.3",
+    "dtype": "bfloat16",
+    "tf32": true,
+    "fp8_requested": true,
+    "fp8_capability_ready": true,
+    "fp8_effective": true,
+    "fp8_scope": "text_mlp",
+    "fp8_linear_count": 96,
+    "fp8_calls": 288000,
+    "fp8_native_fallback_calls": 0,
+    "fallback_events": [],
+    "image_feature_cache": true,
+    "image_feature_count": 0
+  },
+  "generation_seconds": 210.00175264896825,
+  "peak_memory_gib": 27.539883136749268,
+  "mean_words": 1.0,
+  "caption_token_injection": false,
+  "manifest": "/data/lcq/Downloads/ONLY/outputs/gtp_patch_pope3000_20260924/manifest.json",
+  "model_revision": "b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+  "model_config_sha256": "0bde54495c54bcc346064a0d314b010d1c4d3ca7f7e583b6f711949a35352c0f",
+  "data_sha256": "185d7eb49958c882f15d46c51d5c0456fbd5efbf24c57ff8b7adc6648870c6ac",
+  "source_hashes": {
+    "scripts/vrsc_probe.py": "4ec293b2b0f5a6d70cc4328d18c1e47d2c315ef5f6dd2e06d028ed5b1f195441",
+    "src/methods/vrsc.py": "07db223bceaec1fb4aabe192c02b9c45bf5fa21806af04990ee0c9a738626b15",
+    "src/methods/evidence_consensus.py": "71c67ca9a21aa19fb8edc29113521622a235fd621d3118bfb680966c2da267ef",
+    "src/methods/gtp.py": "9bccf92714199da44bb330ed68315c964bf3c71f25b2d508d3ad1c4b693bd067",
+    "scripts/shield_vulnerability_runtime.py": "73b284bc0bd877824b1a773d741d16f6144432ea1000dafabe30c1349dca2e73"
+  }
+}
