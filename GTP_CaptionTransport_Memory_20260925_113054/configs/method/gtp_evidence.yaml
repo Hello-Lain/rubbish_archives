@@ -1,0 +1,9 @@
+_target_: methods.gtp.GTPMethod
+a_u: 0.75
+a_h: 0.75
+tau: 1.0
+tau_e: 1.0
+kappa: 1.0
+grounding_source: caption_tokens
+inject_caption_memory: false
+caption_memory_slots: 32

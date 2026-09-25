@@ -1,0 +1,13 @@
+defaults:
+  - hf
+  - _self_
+
+path: ${oc.env:LLAVA_MODEL,${paths.hf_hub_root}/models--llava-hf--llava-1.5-7b-hf/snapshots/b234b804b114d9e37bb655e11cbbb5f5e971b7a9}
+model_family: llava
+torch_dtype: bfloat16
+attn_implementation: auto
+trust_remote_code: false
+fp8: true
+fp8_scope: text_mlp
+tf32: true
+fallback: true

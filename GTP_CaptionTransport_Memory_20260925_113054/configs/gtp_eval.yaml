@@ -1,0 +1,45 @@
+defaults:
+  - paths: default
+  - model: llava
+  - method: gtp
+  - env: default
+  - _self_
+
+task_name: gtp_llava
+dataset: pope
+run_tag: "20260923"
+output_prefix: outputs/gtp_llava_${dataset}_${run_tag}
+seed: 42
+start: 0
+limit: null
+decoding: sample
+temperature: 1.0
+top_p: 1.0
+top_k: null
+pope_batch_size: 8
+chair_batch_size: 32
+image_batch_size: 16
+num_workers: 4
+prefetch_factor: 4
+pope_max_new_tokens: 8
+chair_max_new_tokens: 512
+claim_max_new_tokens: 32
+chair_claim_mode: caption_prefix
+chair_claim_prompt: "List the clearly visible objects in this image as short object names separated by commas. Include only objects you can directly see; omit uncertain objects."
+chair_dev_count: 128
+chair_dev_seed: 20260923
+progress: true
+
+env:
+  device: cuda:0
+
+eval:
+  variant: gtp
+  pope_path: ${paths.hf_hub_root}/pope/coco/coco_pope_adversarial.json
+  images_root: ${paths.hf_hub_root}/coco2014/val2014
+  chair_questions_path: ${paths.hf_hub_root}/chair/shield/questions.jsonl
+  chair_train_instances_path: ${paths.hf_hub_root}/coco2014/annotations/instances_train2014.json
+  chair_val_instances_path: ${paths.hf_hub_root}/coco2014/annotations/instances_val2014.json
+  chair_train_captions_path: ${paths.hf_hub_root}/coco2014/annotations/captions_train2014.json
+  chair_val_captions_path: ${paths.hf_hub_root}/coco2014/annotations/captions_val2014.json
+  chair_cache: outputs/chair_shield_ground_truth_v2.json

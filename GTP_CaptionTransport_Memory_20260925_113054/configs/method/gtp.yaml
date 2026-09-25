@@ -1,0 +1,9 @@
+_target_: methods.gtp.GTPMethod
+a_u: 0.5
+a_h: 0.5
+tau: 1.0
+tau_e: 1.0
+kappa: 1.0
+grounding_source: coco_claims
+inject_caption_memory: false
+caption_memory_slots: 32
